@@ -35,8 +35,6 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        I am a behavioral scientist who studies how people’s personalities, emotions, and social contexts shape their health, relationships, and well-being over time. My work combines longitudinal methods, advanced statistical modeling, and innovative measurement approaches to understand both stability and change in human behavior.
-
         I’m a behavioral scientist who studies how our personalities, emotions, and social worlds shape health and well-being over time. I use big datasets, advanced stats, and creative measurement tools to understand both what changes and what stays the same about people. My work ranges from building new ways to measure personality to turning thousands of open-ended survey responses into insights that help shape policy—like my COVID-19 research with the RAPID-EC project. At the heart of it all, I want my science to be transparent, reproducible, and useful for both researchers and the communities we serve.
     design:
       columns: '1'

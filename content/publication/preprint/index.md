@@ -1,16 +1,6 @@
 ---
 title: "Selecting the Number and Labels of Topics in Topic Modeling: A Tutorial"
 authors:
-  - name: "Sara J. Weston"
-    affiliation: "Department of Psychology, University of Oregon, Eugene, Oregon"
-    email: "weston.sara@gmail.com"
-  - name: "Ian Shryock"
-    affiliation: "Department of Psychology, University of Oregon, Eugene, Oregon"
-  - name: "Ryan Light"
-    affiliation: "Department of Sociology, University of Oregon, Eugene, Oregon"
-  - name: "Phillip A. Fisher"
-    affiliation: "Graduate School of Education, Stanford University, Stanford, California"
-
 - admin
 date: "2023-05-23T00:00:00Z"
 doi: "10.1177/25152459231160105"

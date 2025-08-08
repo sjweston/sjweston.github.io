@@ -8,29 +8,23 @@ authors:
 - Verónica Benet-Martínez
 date: '2024-01-01'
 publishDate: '2025-08-08T04:41:45.359212Z'
-
 publication_types:
 - article-journal
 publication: '*Journal of Personality and Social Psychology*'
 doi: "10.1037/pspp0000504"
-
 abstract: There are notable parallels between processes leading to person-environment fit (PE-fit) and processes of selection and acculturation among U.S. immigrants. Thus, a natural question is: Do immigrants benefit from fitting their new environments? PE-fit appears to have uniformly positive effects in the education, career, and personality literatures, but it is unclear whether this would be the case for immigrants. The present study evaluated the PE-fit of U.S. immigrants (N = 39,195) to their new host communities (9,925 Zip Code Tabulation Areas [ZCTAs]). PE-fit varied across immigrants. On average, immigrant PE-fit was lower (b = 0.23 and b = 0.35) than the PE-fit of U.S. natives (b = 0.47; N = 122,339 from 2,374 ZCTAs). Immigrants more closely matched their community’s profile when they were older, more educated, from Western countries, or from countries with French or German as the official language. PE-fit was positively associated with immigrant traits of Honesty, Introspection, Creativity, and Industry. Immigrants experienced better PE-fit when they resided in communities with more educated residents, with residents born abroad—particularly in the same world region—or with residents with a similar ethnic background. Finally, immigrant PE-fit was associated with well-being and self-reported health. We discuss the implications for the study of U.S. immigrants and the field of acculturation and propose future directions.
-
 # Summary. An optional shortened abstract.
 summary: This study examined how well U.S. immigrants’ personal characteristics matched those of their local communities and whether this person–environment fit (PE-fit) related to well-being. Using data from nearly 40,000 immigrants, I found that PE-fit was generally lower for immigrants than for U.S. natives, but higher among older, more educated immigrants and those living in communities with more educated or similarly foreign-born residents. Greater PE-fit was linked to better self-reported health and well-being.
-
 tags:
 - human-centered research
 - user segmentation
 - person-environment fit
 - multilevel models
 - census data
-
 featured: true
 # links:
 # - name: ""
 #   url: ""
-
 url_pdf: https://psycnet.apa.org/fulltext/2024-94295-001.html
 url_preregistration: https://osf.io/kajep
 url_code: https://osf.io/k78bd/
@@ -40,7 +34,6 @@ url_project: ''
 url_slides: ''
 url_source: ''
 url_video: ''
-
 image:
   caption: ''
   focal_point: ""

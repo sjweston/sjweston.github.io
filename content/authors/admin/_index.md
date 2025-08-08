@@ -50,37 +50,23 @@ interests:
   - Behavior and outcomes
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: PhD Psychology
+    institution: Washington University in St. Louis
+    date_start: 2014-08-01
+    date_end: 2017-05-31
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+      Thesis on _Building a theory of adaptive neuroticism_. Supervised by [Prof Joshua Jackson](https://artsci.washu.edu/faculty-staff/joshua-jackson). 
     button:
       text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      url: 'https://openscholarship.wustl.edu/art_sci_etds/1155/'
+  - area: MA Psychology
+    institution: Washington University in St. Louis
+    date_start: 2012-08-01
+    date_end: 2014-07-31
+  - area: BA English & Psychology
+    institution: Northwestern University
+    date_start: 2008-09-01
+    date_end: 2012-06-15
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin

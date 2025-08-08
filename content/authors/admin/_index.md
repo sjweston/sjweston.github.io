@@ -128,7 +128,7 @@ skills:
       - name: R
         description: ''
         percent: 95
-        icon: r
+        icon: fa-r
       - name: Causal Inference
         description: ''
         percent: 70
@@ -153,10 +153,6 @@ skills:
         description: ''
         percent: 80
         icon: camera
-
-languages:
-  - name: English
-    percent: 100
 
 # Awards.
 #   Add/remove as many awards below as you like.

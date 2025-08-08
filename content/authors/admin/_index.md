@@ -128,7 +128,7 @@ skills:
       - name: R
         description: ''
         percent: 95
-        icon: r
+        icon: devicon/r-plain
       - name: Causal Inference
         description: ''
         percent: 70

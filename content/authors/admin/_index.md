@@ -76,35 +76,62 @@ work:
     date_end: ''
     summary: |2-
       Accomplishments include:
-      - Developed standardized guidelines for analyzing open-ended responses, enhancing the quality of over 70 international research projects
+      - Developed standardized guidelines for analyzing open-ended responses, enhancing the quality of over 70 international research projects.
       - Designed and taught a course on causal inference utilizing Bayesian analysis and R/Stan, equipping students with advanced analytical skills.
       - Applied hierarchical modeling and profile-based similarity metrics to analyze personality data from over 160,000 participant linked to census-based geographic units, uncovering predictors of fit and health using advanced multilevel and nonlinear modeling techniques.
       - Designed and led a large-scale, preregistered study examining psychological and contextual predictors of immigrant well-being, integrating survey data, user segmentation, and geospatial analysis to identify person-environment fit patterns across communities.
       - Collaborated with faculty and researchers to integrate innovative methodologies into the curriculum, fostering a research-oriented learning environment.
-  - position: Backend Software Engineer
-    company_name: X
+  - position: Data Scientist
+    company_name: Rapid Assessment of Pandemic Impact (Early Development)
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+    date_start: 2020-04-01
+    date_end: 2021-12-31
+    summary: |2-
+      Accomplishments include:
+      - Led real-time analytics for nationally representative longitudinal study tracking 3,300+ families with children under 5 during COVID-19 pandemic.
+      - Designed and implemented weekly data collection pipeline using stratified sampling methods to maintain statistical power and demographic representation across 50+ survey waves.
+      - Developed automated text analytics workflows processing 6,500+ open-ended responses using structural topic modeling and NLP to identify emerging family needs and policy gaps.
+      - Delivered actionable insights to policymakers through bi-weekly policy briefs and data visualizations, informing federal and state-level family support initiatives.
+      - Built predictive models identifying families at highest risk for material hardship, education disruption, and mental health challenges.
+      - Created interactive dashboards enabling real-time monitoring of pandemic impacts across demographic groups.
+      - Collaborated with cross-functional team including non-profit advocates and government stakeholders to translate complex data into policy recommendations
+  - position: Assistant Professor of Psychology
+    company_name: University of Oregon
+    company_url: ''
+    company_logo: ''
+    date_start: 2019-01-01
+    date_end: 2024-09-15
+    summary: |2-
+      Accomplishments include:
+      - Developed and executed comprehensive educational strategies, generating $400,000+ in annual content. 
+      - Established guidelines for open-access data usage, benefiting over 250 research projects. 
+      - Delivered engaging presentations on psychological concepts, enhancing public understanding of psychological science. 
+  - position: Postdoctoral Fellow
+    company_name: Northwestern University, Feinberg School of Medicine
+    company_url: ''
+    company_logo: ''
+    date_start: 2017-07-01
+    date_end: 2018-12-31
+    summary: |2-
+      Accomplishments include:
+      - Led coordinated analysis of 15 longitudinal datasets involving 49,000+ individuals across international research institutions to investigate personality-health connections.
+      - Developed analysis pipelines to process and analyze complex multi-source data.
+      - Created reproducible statistical workflows that increased team output by 400%.
+      - Collaborated with cross-disciplinary teams including psychologists and medical researchers.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
   - name: Technical Skills
     items:
-      - name: Python
+      - name: R
         description: ''
-        percent: 80
-        icon: code-bracket
-      - name: Data Science
+        percent: 95
+        icon: r
+      - name: Causal Inference
         description: ''
-        percent: 100
+        percent: 70
         icon: chart-bar
       - name: SQL
         description: ''
@@ -114,15 +141,15 @@ skills:
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
+      - name: Cooking
         description: ''
         percent: 60
         icon: person-simple-walk
-      - name: Cats
+      - name: Parenting
         description: ''
         percent: 100
         icon: cat
-      - name: Photography
+      - name: Traveling
         description: ''
         percent: 80
         icon: camera
@@ -130,10 +157,6 @@ skills:
 languages:
   - name: English
     percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
 
 # Awards.
 #   Add/remove as many awards below as you like.

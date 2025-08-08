@@ -148,11 +148,11 @@ skills:
       - name: Parenting
         description: ''
         percent: 100
-        icon: hero/heart
+        icon: heart
       - name: Traveling
         description: ''
         percent: 80
-        icon: hero/globe-europe-africa
+        icon: globe-europe-africa
 
 languages:
   - name: English

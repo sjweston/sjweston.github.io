@@ -37,11 +37,7 @@ sections:
       text: |-
         I am a behavioral scientist who studies how people’s personalities, emotions, and social contexts shape their health, relationships, and well-being over time. My work combines longitudinal methods, advanced statistical modeling, and innovative measurement approaches to understand both stability and change in human behavior.
 
-        I specialize in personality and individual differences, with projects ranging from the coordinated analysis of large-scale datasets on personality and health, to the development of new tools for assessing psychological traits and emotional dynamics. I also lead research at the intersection of text analysis and survey design, creating automated pipelines that transform open-ended responses into actionable insights for scientists, policymakers, and the public.
-
-        My applied work includes serving as a data scientist for the Rapid Assessment of Pandemic Impact on Development of Early Childhood (RAPID-EC) project, where I built real-time analytics systems to identify emerging family needs during COVID-19. These findings directly informed public health communication strategies and policy discussions, including testimony to the U.S. Senate Finance Committee.
-
-        Across all my research, I aim to make science transparent, reproducible, and impactful—producing not just academic publications, but also interactive dashboards, open-access tutorials, and methodological tools used by researchers worldwide.
+        I’m a behavioral scientist who studies how our personalities, emotions, and social worlds shape health and well-being over time. I use big datasets, advanced stats, and creative measurement tools to understand both what changes and what stays the same about people. My work ranges from building new ways to measure personality to turning thousands of open-ended survey responses into insights that help shape policy—like my COVID-19 research with the RAPID-EC project. At the heart of it all, I want my science to be transparent, reproducible, and useful for both researchers and the communities we serve.
     design:
       columns: '1'
   - block: collection

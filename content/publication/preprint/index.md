@@ -24,13 +24,12 @@ abstract: Topic modeling is a type of text analysis that identifies clusters of 
 summary: This tutorial provides practical guidance for selecting the number of topics and labeling them in topic modeling analyses. Using structural topic modeling as an example, we outline quantitative metrics and qualitative tools that help researchers balance statistical fit, interpretability, and project goals.
 
 tags:
-- child
-- development
-- health
-- infant
+- topic modeling
+- child development
+- healthcare 
 - natural language processing
 - structural topic modeling
-- topic modeling
+
 
 featured: true
 

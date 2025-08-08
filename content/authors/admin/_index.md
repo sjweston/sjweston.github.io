@@ -128,7 +128,7 @@ skills:
       - name: R
         description: ''
         percent: 95
-        icon: r
+        icon: code-bracket
       - name: Causal Inference
         description: ''
         percent: 70

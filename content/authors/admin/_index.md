@@ -75,10 +75,12 @@ work:
     date_start: 2024-09-16
     date_end: ''
     summary: |2-
-      Responsibilities include:
+      Accomplishments include:
       - Developed standardized guidelines for analyzing open-ended responses, enhancing the quality of over 70 international research projects
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Designed and taught a course on causal inference utilizing Bayesian analysis and R/Stan, equipping students with advanced analytical skills.
+      - Applied hierarchical modeling and profile-based similarity metrics to analyze personality data from over 160,000 participant linked to census-based geographic units, uncovering predictors of fit and health using advanced multilevel and nonlinear modeling techniques.
+      - Designed and led a large-scale, preregistered study examining psychological and contextual predictors of immigrant well-being, integrating survey data, user segmentation, and geospatial analysis to identify person-environment fit patterns across communities.
+      - Collaborated with faculty and researchers to integrate innovative methodologies into the curriculum, fostering a research-oriented learning environment.
   - position: Backend Software Engineer
     company_name: X
     company_url: ''

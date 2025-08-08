@@ -3,7 +3,7 @@
 title: Sara Weston
 
 # Name pronunciation (optional)
-name_pronunciation: sa-RAH wes-TUN
+# name_pronunciation: sa-RAH wes-TUN
 
 # Full name (for SEO)
 first_name: Sara

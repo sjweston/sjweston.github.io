@@ -128,7 +128,7 @@ skills:
       - name: R
         description: ''
         percent: 95
-        icon: fa-r
+        icon: devicon-r-plain
       - name: Causal Inference
         description: ''
         percent: 70
@@ -148,11 +148,11 @@ skills:
       - name: Parenting
         description: ''
         percent: 100
-        icon: cat
+        icon: heart
       - name: Traveling
         description: ''
         percent: 80
-        icon: camera
+        icon: globe-europe-africa
 
 languages:
   - name: English

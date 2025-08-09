@@ -1,6 +1,5 @@
 ---
-title: 'The person-environment fit of immigrants to the United States: A registered
-  report.'
+title: 'Person-environment fit among U.S. immigrants: Associations with well-being and health'
 authors:
 - Sara J Weston
 - David M Condon
@@ -13,9 +12,10 @@ publication_types:
 publication: '*Journal of Personality and Social Psychology*'
 
 doi: "10.1037/pspp0000504"
-abstract: There are notable parallels between processes leading to person-environment fit (PE-fit) and processes of selection and acculturation among U.S. immigrants. Thus, a natural question is: Do immigrants benefit from fitting their new environments? PE-fit appears to have uniformly positive effects in the education, career, and personality literatures, but it is unclear whether this would be the case for immigrants. The present study evaluated the PE-fit of U.S. immigrants (N = 39,195) to their new host communities (9,925 Zip Code Tabulation Areas [ZCTAs]). PE-fit varied across immigrants. On average, immigrant PE-fit was lower (b = 0.23 and b = 0.35) than the PE-fit of U.S. natives (b = 0.47; N = 122,339 from 2,374 ZCTAs). Immigrants more closely matched their community’s profile when they were older, more educated, from Western countries, or from countries with French or German as the official language. PE-fit was positively associated with immigrant traits of Honesty, Introspection, Creativity, and Industry. Immigrants experienced better PE-fit when they resided in communities with more educated residents, with residents born abroad—particularly in the same world region—or with residents with a similar ethnic background. Finally, immigrant PE-fit was associated with well-being and self-reported health. We discuss the implications for the study of U.S. immigrants and the field of acculturation and propose future directions.
+abstract: |
+  There are notable parallels between processes leading to person-environment fit (PE-fit) and processes of selection and acculturation among U.S. immigrants. Thus, a natural question is: Do immigrants benefit from fitting their new environments? PE-fit appears to have uniformly positive effects in the education, career, and personality literatures, but it is unclear whether this would be the case for immigrants. The present study evaluated the PE-fit of U.S. immigrants (N = 39,195) to their new host communities (9,925 Zip Code Tabulation Areas [ZCTAs]). PE-fit varied across immigrants. On average, immigrant PE-fit was lower (b = 0.23 and b = 0.35) than the PE-fit of U.S. natives (b = 0.47; N = 122,339 from 2,374 ZCTAs). Immigrants more closely matched their community's profile when they were older, more educated, from Western countries, or from countries with French or German as the official language. PE-fit was positively associated with immigrant traits of Honesty, Introspection, Creativity, and Industry. Immigrants experienced better PE-fit when they resided in communities with more educated residents, with residents born abroad—particularly in the same world region—or with residents with a similar ethnic background. Finally, immigrant PE-fit was associated with well-being and self-reported health. We discuss the implications for the study of U.S. immigrants and the field of acculturation and propose future directions.
 # Summary. An optional shortened abstract.
-summary: This study examined how well U.S. immigrants’ personal characteristics matched those of their local communities.
+summary: This study examined how well U.S. immigrants' personal characteristics matched those of their local communities.
 tags:
 - human-centered research
 - user segmentation

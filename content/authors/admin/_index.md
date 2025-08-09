@@ -170,6 +170,6 @@ awards:
 
 ## About Me
 
-Sara Weston is a behavioral science and research methodology expert with over a decade of experience leading high-impact research. She specializes in advanced statistical methods—including text analysis, longitudinal modeling, and Bayesian approaches—and in translating complex findings into actionable insights for policymakers, non-technical stakeholders, and cross-disciplinary teams. Driven by both scientific rigor and real-world impact, Weston’s research has informed federal policy, advanced methodological standards in psychology, and equipped the next generation of scholars with the tools to conduct transparent, high-quality research.
+Sara Weston is a behavioral science and research methodology expert with over a decade of experience leading high-impact research. She specializes in advanced statistical methods—including text analysis, longitudinal modeling, and Bayesian approaches—and in translating complex findings into actionable insights for policymakers, non-technical stakeholders, and cross-disciplinary teams. Driven by both scientific rigor and real-world impact, Dr. Weston’s research has informed federal policy, advanced methodological standards in psychology, and equipped the next generation of scholars with the tools to conduct transparent, high-quality research.
 
 

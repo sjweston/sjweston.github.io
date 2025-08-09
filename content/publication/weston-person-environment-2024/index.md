@@ -15,7 +15,7 @@ publication: '*Journal of Personality and Social Psychology*'
 doi: "10.1037/pspp0000504"
 
 # Summary. An optional shortened abstract.
-summary: This study examined how well U.S. immigrants’ personal characteristics matched those of their local communities and whether this person–environment fit (PE-fit) related to well-being. Using data from nearly 40,000 immigrants, I found that PE-fit was generally lower for immigrants than for U.S. natives, but higher among older, more educated immigrants and those living in communities with more educated or similarly foreign-born residents. Greater PE-fit was linked to better self-reported health and well-being.
+summary: This study examined how well U.S. immigrants’ personal characteristics matched those of their local communities.
 tags:
 - human-centered research
 - user segmentation

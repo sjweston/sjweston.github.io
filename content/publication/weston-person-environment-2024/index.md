@@ -19,7 +19,6 @@ When we think about what helps immigrants thrive in a new country, we often focu
 
 In other contexts — like education and workplaces — PE-fit is a consistent predictor of success. Students who “fit” their school do better academically and socially. Employees whose personalities match their organizations’ values tend to be more satisfied and productive. I wanted to know: **Does the same hold true for immigrants settling in the United States?**
 
----
 
 ## How We Studied It
 
@@ -28,7 +27,6 @@ We then calculated PE-fit by correlating an individual’s personality profile w
 
 This gave us an “objective” measure of fit — how closely someone’s psychological characteristics match those of their neighbors.
 
----
 
 ## What We Found
 
@@ -58,7 +56,6 @@ Higher fit was associated with:
 
 These effects held even after controlling for personality traits.
 
----
 
 ## Why It Matters
 
@@ -67,7 +64,6 @@ But PE-fit isn’t simply about assimilation. It could reflect **integration** �
 
 It also highlights how **community composition** can help. Living near others with shared experiences can boost both objective fit and well-being, possibly by providing social support, familiar cultural cues, and easier access to resources.
 
----
 
 ## Looking Ahead
 
@@ -78,6 +74,5 @@ Or because fit encourages deeper social ties?
 
 Understanding these pathways could inform policies that help immigrants settle in communities where they can flourish — psychologically as well as materially.
 
----
 
 **Takeaway:** Where you live — and how well it aligns with who you are — matters.

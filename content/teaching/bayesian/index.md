@@ -8,7 +8,7 @@ tags:
   - Bayes
 ---
 
-I developed an introduction to Bayesian Analysis seminar in the summer of 2025. 
+I developed an introduction to Bayesian Analysis seminar in the spring term of 2025. 
 
 [Course website here.](https://uobayes.netlify.app/)
 

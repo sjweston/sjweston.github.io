@@ -1,7 +1,7 @@
 ---
 title: Bayesian analysis
 summary: Introduction to Bayes
-date: 2023-10-24
+date: 2025-04-01
 type: docs
 math: false
 tags:

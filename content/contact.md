@@ -114,13 +114,13 @@ sections:
               label: Additional Information
               type: textarea
               required: false
-              placeholder: 'Any other details you\'d like to share...'
+              placeholder: 'Any other details you would like to share...'
         # Custom form submit button text
         submit: 'Submit Consultation Request'
         # Custom form success message
-        success: 'Thank you for your consultation request! I\'ll review your project details and get back to you within 24-48 hours.'
+        success: 'Thank you for your consultation request! I will review your project details and get back to you within 24-48 hours.'
         # Custom form error message
-        error: 'Sorry, there was an error submitting your request. Please try again or email me directly at sara.weston@uoregon.edu'
+        error: 'Sorry, there was an error submitting your request. Please try again.'
     design:
       # Single column layout for better form focus
       columns: '1'

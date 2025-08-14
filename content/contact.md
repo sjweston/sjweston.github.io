@@ -2,7 +2,7 @@
 title: 'Data Analysis Consultation'
 summary: 'Get in touch for data analysis consultation'
 type: page
-
+---
 # Page sections
 sections:
   - block: markdown

@@ -52,17 +52,13 @@ interests:
 education:
   - area: PhD Psychology
     institution: Washington University in St. Louis
-    date_start: 2014-08-01
+    date_start: 2012-08-01
     date_end: 2017-05-31
     summary: |
       Thesis on _Building a theory of adaptive neuroticism_. Supervised by [Prof Joshua Jackson](https://artsci.washu.edu/faculty-staff/joshua-jackson). 
     button:
       text: 'Read Thesis'
       url: 'https://openscholarship.wustl.edu/art_sci_etds/1155/'
-  - area: MA Psychology
-    institution: Washington University in St. Louis
-    date_start: 2012-08-01
-    date_end: 2014-07-31
   - area: BA English & Psychology
     institution: Northwestern University
     date_start: 2008-09-01

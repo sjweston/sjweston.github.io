@@ -286,7 +286,7 @@ tidy(topic_model08, matrix = "beta") %>%
 ```
 
 ```{r, echo=F}
-ggsave(filename = "featured.jpg", width = 1200, height=800, units="px")
+ggsave(filename = "featured.jpg",scale = 2.3, width = 1200, height=800, units="px")
 ```
 
 

@@ -1,5 +1,5 @@
 ---
-title: How Many Topics? A Practical Guide to Structural Topic Modeling
+title: 📈 How Many Topics? A Practical Guide to Structural Topic Modeling
 summary: When you have thousands of open-ended responses and no idea what people are actually saying.
 date: 2023-12-12
 authors:

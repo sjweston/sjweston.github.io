@@ -213,7 +213,7 @@ gamma_08 %>%
 
 ## # A tibble: 7 × 2
 ##   topic     n
-##   <int> <int>
+##   &lt;int&gt; &lt;int&gt;
 ## 1     6  2034
 ## 2     1  1619
 ## 3     3  1248

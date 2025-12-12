@@ -223,7 +223,7 @@ gamma_08 %>%
 ## 7     4    88
 ```
 
-Rare topics (dominating \<1% of documents) can be valuable for
+Rare topics (dominating less than 1% of documents) can be valuable for
 discovering edge cases but problematic for quantitative analysis.
 
 ### Check Solution Congruence
@@ -310,17 +310,7 @@ tidy(topic_model08, matrix = "beta") %>%
     theme_pubr()
 ```
 
-<figure>
-
-<img src="fig/unnamed-chunk-12-1.png" alt="Frequent words for 8-topic model."/>
-
-<figcaption aria-hidden="true">
-
-Frequent words for 8-topic model.
-
-</figcaption>
-
-</figure>
+![Frequent words for 8-topic model.](fig/unnamed-chunk-12-1.png)
 
 ### Key Examples
 
@@ -355,17 +345,7 @@ corr_08 <- topicCorr(topic_model08, cutoff = 0.3)
 plot(corr_08)
 ```
 
-<figure>
-
-<img src="fig/unnamed-chunk-15-1.png" alt="Network plot of topics in 8-topic model."/>
-
-<figcaption aria-hidden="true">
-
-Network plot of topics in 8-topic model.
-
-</figcaption>
-
-</figure>
+![Network plot of topics in 8-topic model.](fig/unnamed-chunk-15-1.png)
 
 ## What We Found
 

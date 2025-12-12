@@ -160,7 +160,7 @@ storage$results %>%
 ```
 
 ![Metrics for comparing topic modeling
-solutions.](content/post/fig/unnamed-chunk-6-1.png)
+solutions.](fig/unnamed-chunk-6-1.png)
 
 In our data, three solutions stood
 out: 8, 14, and 18 topics. Each represented either a clear improvement

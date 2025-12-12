@@ -160,7 +160,7 @@ storage$results %>%
 ```
 
 ![Metrics for comparing topic modeling
-solutions.](static/post/stm/unnamed-chunk-6-1.png)
+solutions.](fig/unnamed-chunk-6-1.png)
 
 In our data, three solutions stood
 out: 8, 14, and 18 topics. Each represented either a clear improvement
@@ -312,7 +312,7 @@ tidy(topic_model08, matrix = "beta") %>%
 
 <figure>
 
-<img src="static/post/stm/unnamed-chunk-12-1.png" alt="Frequent words for 8-topic model."/>
+<img src="fig/unnamed-chunk-12-1.png" alt="Frequent words for 8-topic model."/>
 
 <figcaption aria-hidden="true">
 
@@ -357,7 +357,7 @@ plot(corr_08)
 
 <figure>
 
-<img src="static/post/stm/unnamed-chunk-15-1.png" alt="Network plot of topics in 8-topic model."/>
+<img src="fig/unnamed-chunk-15-1.png" alt="Network plot of topics in 8-topic model."/>
 
 <figcaption aria-hidden="true">
 

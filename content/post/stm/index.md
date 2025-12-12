@@ -10,6 +10,8 @@ tags:
     - structural topic modeling
     - scalability
     - R
+image:
+  caption: 'Image credit: Nano Banana'
 markup: "markdown"
 ---
 

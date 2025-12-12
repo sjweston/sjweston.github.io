@@ -10,6 +10,7 @@ tags:
     - structural topic modeling
     - scalability
     - R
+markup: "markdown"
 ---
 
 I’ve been there: staring at 6,000+ survey responses to an open-ended
@@ -61,7 +62,7 @@ LDA by allowing you to incorporate covariates. Even if you don’t need
 covariates, the `stm` package has excellent tools for model comparison
 and interpretation.
 
-```         
+```r
 library(stm)
 library(tidytext)
 library(tidyverse)
@@ -78,7 +79,7 @@ stem your words.** Recent work shows stemming doesn’t improve fit and
 can actually hurt stability—it collapses meaningful distinctions (like
 “vaccinated” vs. “vaccination”).
 
-```         
+```r
 temp <- textProcessor(
     documents = rapid$vaccine,
     metadata = rapid,
@@ -106,7 +107,7 @@ For our vaccine data, the prompt was specific (limiting topic diversity)
 but we had lots of responses (enabling more topics). I set the range at
 3-20:
 
-```         
+```r
 storage <- searchK(
     out$documents,
     out$vocab,
@@ -144,7 +145,7 @@ looking for inflection points—places where adding one more topic gives
 you a meaningful improvement or where the next topic starts hurting
 coherence.
 
-```         
+```r
 # Plot all metrics
 storage$results %>%
   pivot_longer(cols = -K,
@@ -170,7 +171,7 @@ over the previous model or preceded a drop in coherence.
 
 Now estimate your candidate models in full:
 
-```         
+```r
 topic_model08 <- stm(
     documents = out$documents,
     vocab = out$vocab,
@@ -201,7 +202,7 @@ produces the most interpretable, actionable categories.
 
 How often does each topic dominate a response?
 
-```         
+```r
 # Extract theta (document-topic probabilities)
 gamma_08 <- tidy(topic_model08, matrix = "gamma")
 
@@ -213,7 +214,7 @@ gamma_08 %>%
 
 ## # A tibble: 7 × 2
 ##   topic     n
-##   &lt;int&gt; &lt;int&gt;
+##   int int
 ## 1     6  2034
 ## 2     1  1619
 ## 3     3  1248
@@ -231,7 +232,7 @@ discovering edge cases but problematic for quantitative analysis.
 Which topics appear across *all* your candidate solutions? These are
 your most robust themes.
 
-```         
+```r
 # Extract beta matrices (word-topic probabilities)
 beta_08_w <- tidy(topic_model08, matrix = "beta") %>%
   pivot_wider(values_from = beta, names_from = topic)
@@ -281,7 +282,7 @@ This is the human judgment part. Use multiple sources of evidence:
 
 ### Frequent and Exclusive Words
 
-```         
+```r
 labelTopics(topic_model08, topics = 4, n = 10)
 
 ## Topic 4 Top Words:
@@ -294,7 +295,7 @@ labelTopics(topic_model08, topics = 4, n = 10)
 “Frequent” means common in that topic. “Exclusive” means common in that
 topic *and rare elsewhere*. Exclusive words are often more diagnostic.
 
-```         
+```r
 tidy(topic_model08, matrix = "beta") %>% 
     with_groups(topic, top_n, beta, n = 10) %>% 
     filter(beta >= .02) %>% 
@@ -316,7 +317,7 @@ tidy(topic_model08, matrix = "beta") %>%
 
 Read actual responses that score high on each topic:
 
-```         
+```r
 findThoughts(
     topic_model08,
     texts = out$meta$vaccine,
@@ -340,7 +341,7 @@ your interpretation.
 Which topics cluster together? This can help disambiguate confusing
 topics:
 
-```         
+```r
 corr_08 <- topicCorr(topic_model08, cutoff = 0.3)
 plot(corr_08)
 ```

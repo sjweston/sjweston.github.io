@@ -271,7 +271,7 @@ cor(beta_08_w[,-1], beta_14_w[,-1])
 ## 8 -0.0060075086  0.0231534882 -0.0037929924
 ```
 
-Topics that correlate highly across solutions (r \> .5) are capturing
+Topics that correlate highly across solutions (r > .5) are capturing
 something real. Topics unique to one solution might be splitting
 hairs—or might be uncovering something the coarser model missed.
 

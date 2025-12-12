@@ -72,26 +72,25 @@ work:
     date_end: ''
     summary: |2-
       Accomplishments include:
-      - Developed standardized guidelines for analyzing open-ended responses, enhancing the quality of over 70 international research projects.
-      - Designed and taught a course on causal inference utilizing Bayesian analysis and R/Stan, equipping students with advanced analytical skills.
-      - Applied hierarchical modeling and profile-based similarity metrics to analyze personality data from over 160,000 participant linked to census-based geographic units, uncovering predictors of fit and health using advanced multilevel and nonlinear modeling techniques.
-      - Designed and led a large-scale, preregistered study examining psychological and contextual predictors of immigrant well-being, integrating survey data, user segmentation, and geospatial analysis to identify person-environment fit patterns across communities.
-      - Collaborated with faculty and researchers to integrate innovative methodologies into the curriculum, fostering a research-oriented learning environment.
+      - Built Power BI dashboard tracking 70+ doctoral students' milestone progress; used by 30 faculty to identify at-risk students, reducing time-to-degree and informing program policy decisions.
+      - Led program redesign through stakeholder research: conducted interviews with faculty and students to identify pain points in a key milestone, synthesized feedback into proposals, and secured unanimous faculty vote—reducing completion time and advisor burden.
+      - Applied NLP and social network analysis to 700,000+ online community posts to map individual differences in the Type 1 diabetes community; findings informed healthcare communication strategies for patient advocacy organizations.
+      - Mentored 13 early-career researchers (5 graduate, 8 undergraduate) through publication and career transitions; graduates placed in data science roles, graduate programs, and industry research positions.
+      - Designed and delivered graduate-level statistics curriculum using open-source tools (R, jamovi); received Tykeson Teaching Award (2025) for making complex data accessible through clear storytelling.
+      - Managed $250K annual research budget across multiple concurrent projects; secured $1.5M+ in competitive NIH and foundation funding as PI.
   - position: Data Scientist
     company_name: Rapid Assessment of Pandemic Impact (Early Development)
     company_url: ''
     company_logo: ''
     date_start: 2020-04-01
-    date_end: 2021-12-31
+    date_end: 
     summary: |2-
       Accomplishments include:
-      - Led real-time analytics for nationally representative longitudinal study tracking 3,300+ families with children under 5 during COVID-19 pandemic.
-      - Designed and implemented weekly data collection pipeline using stratified sampling methods to maintain statistical power and demographic representation across 50+ survey waves.
-      - Developed automated text analytics workflows processing 6,500+ open-ended responses using structural topic modeling and NLP to identify emerging family needs and policy gaps.
-      - Delivered actionable insights to policymakers through bi-weekly policy briefs and data visualizations, informing federal and state-level family support initiatives.
-      - Built predictive models identifying families at highest risk for material hardship, education disruption, and mental health challenges.
-      - Created interactive dashboards enabling real-time monitoring of pandemic impacts across demographic groups.
-      - Collaborated with cross-functional team including non-profit advocates and government stakeholders to translate complex data into policy recommendations
+      - Designed and deployed 50+ waves of nationally representative surveys tracking 3,300+ families during COVID-19, integrating behavioral and attitudinal data to uncover unmet needs; outputs used by Senate Finance Committee staff to inform Child Tax Credit expansion.
+      - Built automated NLP pipeline (tidytext, stm) to analyze 6,500+ open-ended responses, identifying emerging pain points in real time; findings informed survey iteration and federal policy recommendations.
+      - Developed predictive models identifying families at highest risk for material hardship, integrating attitudinal and behavioral data for targeted interventions.
+      - Created interactive R Markdown dashboards visualizing trends by demographic segments (e.g., material hardship by poverty status over time); used by policymakers and RAPID team to prioritize research questions.
+      - Collaborated with policymakers, non-profits, and technical teams to translate complex survey data into product-style briefs; insights reached 50,000+ households through federal support programs.
   - position: Assistant Professor of Psychology
     company_name: University of Oregon
     company_url: ''
@@ -111,11 +110,8 @@ work:
     date_end: 2018-12-31
     summary: |2-
       Accomplishments include:
-      - Led coordinated analysis of 15 longitudinal datasets involving 49,000+ individuals across international research institutions to investigate personality-health connections.
-      - Developed analysis pipelines to process and analyze complex multi-source data.
-      - Created reproducible statistical workflows that increased team output by 400%.
-      - Collaborated with cross-disciplinary teams including psychologists and medical researchers.
-
+      - Coordinated analysis across 15 longitudinal datasets (49,000+ participants) to identify patterns in health behavior; led team of analysts across multiple international institutions.
+      - Built automated R pipelines for reproducible meta-analysis: analysts ran standardized scripts, outputs fed directly into aggregation and visualization. Increased research output 4x (from 3 coordinated analyses pre-pipeline to 12+ post-implementation).
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:

@@ -8,7 +8,7 @@ tags:
     - generative ai
     - productivity
     - code
-    -writing
+    - writing
 image:
   caption: 'Image credit: Midjourney'
 markup: "markdown"

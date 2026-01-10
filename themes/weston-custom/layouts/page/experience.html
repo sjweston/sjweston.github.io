@@ -1,0 +1,167 @@
+{{ define "main" }}
+{{- $author := .Site.GetPage "/authors/admin" -}}
+<div style="padding-top: var(--header-height);"></div>
+
+<!-- Hero -->
+<section class="section section--dark" style="padding: var(--space-4xl) 0;">
+  <div class="container">
+    <div class="section-header animate-on-scroll" style="text-align: left; margin-bottom: 0;">
+      <p class="section-header__eyebrow" style="color: var(--color-accent);">Experience</p>
+      <h1 class="section-header__title" style="color: #fff;">Career Journey</h1>
+      <p class="section-header__subtitle" style="color: rgba(255,255,255,0.8); max-width: none;">
+        From postdoctoral research to associate professorship—a decade of translating data into impact.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline Section -->
+<section class="section">
+  <div class="container">
+    <div class="timeline">
+      {{- range $author.Params.work }}
+      <div class="timeline__item animate-on-scroll">
+        <div class="timeline__marker"></div>
+        <div class="timeline__date">
+          {{ if .date_end }}
+            {{ .date_start | time.Format "Jan 2006" }} – {{ .date_end | time.Format "Jan 2006" }}
+          {{ else }}
+            {{ .date_start | time.Format "Jan 2006" }} – Present
+          {{ end }}
+        </div>
+        <h3 class="timeline__title">{{ .position }}</h3>
+        <p class="timeline__company">{{ .company_name }}</p>
+        <div class="timeline__content">
+          {{- with .summary }}
+          <ul class="timeline__accomplishments">
+            {{- $lines := split . "\n" }}
+            {{- range $lines }}
+              {{- $trimmed := trim . " -" }}
+              {{- if $trimmed }}
+            <li>{{ $trimmed }}</li>
+              {{- end }}
+            {{- end }}
+          </ul>
+          {{- end }}
+        </div>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <p class="section-header__eyebrow">Education</p>
+      <h2 class="section-header__title">Academic Background</h2>
+    </div>
+
+    <div class="work-grid stagger-children" style="max-width: 800px; margin: 0 auto;">
+      {{- range $author.Params.education }}
+      <div class="card">
+        <div class="card__eyebrow">{{ .date_start | time.Format "2006" }} – {{ .date_end | time.Format "2006" }}</div>
+        <h3 class="card__title">{{ .area }}</h3>
+        <p class="card__description" style="margin-bottom: var(--space-sm);">{{ .institution }}</p>
+        {{- with .summary }}
+        <p style="font-size: var(--text-sm); color: var(--color-text-muted);">{{ . | markdownify }}</p>
+        {{- end }}
+        {{- with .button }}
+        <a href="{{ .url }}" class="btn btn--outline" style="margin-top: var(--space-md);" target="_blank" rel="noopener">{{ .text }}</a>
+        {{- end }}
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="section">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <p class="section-header__eyebrow">Expertise</p>
+      <h2 class="section-header__title">Skills & Tools</h2>
+    </div>
+
+    <div class="skills-grid stagger-children">
+      {{- range $author.Params.skills }}
+      <div class="skill-category">
+        <h3 class="skill-category__title">{{ .name }}</h3>
+        {{- range .items }}
+        <div class="skill-item">
+          <div class="skill-item__icon">
+            {{- if eq .name "R" }}
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            {{- else if eq .name "SQL" }}
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+            {{- else }}
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+            {{- end }}
+          </div>
+          <div class="skill-item__info">
+            <div class="skill-item__name">{{ .name }}</div>
+            <div class="skill-item__bar">
+              <div class="skill-item__progress" style="width: {{ .percent }}%;"></div>
+            </div>
+          </div>
+        </div>
+        {{- end }}
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+<!-- Awards Section -->
+{{- with $author.Params.awards }}
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <p class="section-header__eyebrow">Recognition</p>
+      <h2 class="section-header__title">Awards & Honors</h2>
+    </div>
+
+    <div class="work-grid stagger-children" style="max-width: 600px; margin: 0 auto;">
+      {{- range . }}
+      <div class="card" style="text-align: center;">
+        <div style="width: 64px; height: 64px; margin: 0 auto var(--space-lg); background: linear-gradient(135deg, var(--color-accent) 0%, #FF8E8E 100%); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+            <circle cx="12" cy="8" r="7"></circle>
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+          </svg>
+        </div>
+        <div class="card__eyebrow">{{ .date | time.Format "2006" }}</div>
+        <h3 class="card__title">{{ .title }}</h3>
+        <p class="card__description">{{ .awarder }}</p>
+        {{- with .summary }}
+        <p style="font-size: var(--text-sm); color: var(--color-text-muted);">{{ . }}</p>
+        {{- end }}
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end }}
+
+<!-- CTA Section -->
+<section class="section section--dark">
+  <div class="container" style="text-align: center;">
+    <div class="animate-on-scroll">
+      <h2 style="color: #fff; margin-bottom: var(--space-lg);">Want the full details?</h2>
+      <a href="{{ "uploads/resume.pdf" | relURL }}" class="btn btn--primary">Download My CV</a>
+    </div>
+  </div>
+</section>
+{{ end }}

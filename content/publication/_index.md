@@ -1,12 +1,4 @@
 ---
-title: Publications
-cms_exclude: true
-
-# View.
-view: citation
-
-# Optional header image (relative to `static/media/` folder).
-banner:
-  caption: ''
-  image: ''
+title: Research
+description: "Peer-reviewed publications spanning personality psychology, health outcomes, text analysis, and research methodology."
 ---

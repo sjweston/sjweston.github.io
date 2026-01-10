@@ -1,12 +1,13 @@
 # Configuration of Hugo
-# Guide: https://docs.hugoblox.com/tutorial/
-# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# Custom theme for Sara Weston's professional website
 
 # Website name
 title: Sara Weston
 # Website URL
 baseURL: 'https://example.com/'
+
+# Use custom theme
+theme: weston-custom
 
 ############################
 ## LANGUAGE
@@ -33,9 +34,10 @@ footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 permalinks:
   authors: '/author/:slug/'
+  post: '/blog/:slug/'
 disableAliases: true
 outputs:
-  home: [HTML, RSS, headers, redirects, backlinks]
+  home: [HTML, RSS]
   section: [HTML, RSS]
 imaging:
   resampleFilter: lanczos
@@ -50,7 +52,15 @@ markup:
   _merge: deep
   highlight:
     lineNos: false
+    style: monokai
 security:
   _merge: deep
 sitemap:
   _merge: deep
+
+# Custom params for the theme
+params:
+  description: "Behavioral scientist turning data into decisions. Associate Professor at the University of Oregon."
+  author: "Sara Weston"
+  appearance:
+    mode: light

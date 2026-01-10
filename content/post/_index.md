@@ -1,4 +1,4 @@
 ---
 title: Blog
-view: article-grid
+description: "Thoughts on research methods, AI in academia, and data science practices."
 ---

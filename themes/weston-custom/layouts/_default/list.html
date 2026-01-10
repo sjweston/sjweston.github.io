@@ -1,0 +1,152 @@
+{{ define "main" }}
+<div style="padding-top: var(--header-height);"></div>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <h1 class="section-header__title">{{ .Title }}</h1>
+      {{- with .Description }}
+      <p class="section-header__subtitle">{{ . }}</p>
+      {{- end }}
+    </div>
+
+    {{ .Content }}
+
+    {{- if eq .Section "publication" }}
+    <!-- Publications List -->
+    <div class="pub-filters animate-on-scroll">
+      <button class="pub-filter pub-filter--active" data-filter="all">All</button>
+      <button class="pub-filter" data-filter="2024">2024</button>
+      <button class="pub-filter" data-filter="2023">2023</button>
+      <button class="pub-filter" data-filter="2022">2022</button>
+      <button class="pub-filter" data-filter="older">Earlier</button>
+    </div>
+
+    <div class="pub-list animate-on-scroll">
+      {{- $pubs := .Pages -}}
+      {{- $pubs = sort $pubs ".Date" "desc" -}}
+      {{- range $pubs }}
+      <article class="pub-item" data-year="{{ .Date.Format "2006" }}">
+        <div class="pub-item__year">{{ .Date.Format "2006" }}</div>
+        <div class="pub-item__content">
+          <h3 class="pub-item__title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h3>
+          {{- with .Params.authors }}
+          <p class="pub-item__authors">{{ delimit . ", " }}</p>
+          {{- end }}
+          {{- with .Params.publication }}
+          <p class="pub-item__venue">{{ . }}</p>
+          {{- end }}
+          {{- with .Params.tags }}
+          <div class="pub-item__tags">
+            {{- range first 3 . }}
+            <span class="pub-tag">{{ . }}</span>
+            {{- end }}
+          </div>
+          {{- end }}
+        </div>
+      </article>
+      {{- end }}
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const filters = document.querySelectorAll('.pub-filter');
+      const items = document.querySelectorAll('.pub-item');
+
+      filters.forEach(filter => {
+        filter.addEventListener('click', function() {
+          const filterValue = this.dataset.filter;
+
+          filters.forEach(f => f.classList.remove('pub-filter--active'));
+          this.classList.add('pub-filter--active');
+
+          items.forEach(item => {
+            const year = item.dataset.year;
+            if (filterValue === 'all') {
+              item.style.display = '';
+            } else if (filterValue === 'older') {
+              item.style.display = parseInt(year) < 2022 ? '' : 'none';
+            } else {
+              item.style.display = year === filterValue ? '' : 'none';
+            }
+          });
+        });
+      });
+    });
+    </script>
+
+    {{- else if eq .Section "post" }}
+    <!-- Blog Grid -->
+    <div class="blog-grid stagger-children">
+      {{- range .Pages.ByDate.Reverse }}
+      <article class="blog-card">
+        <div class="blog-card__image">
+          {{- with .Params.image }}
+            {{- with $.Resources.GetMatch .filename }}
+            <img src="{{ .Permalink }}" alt="">
+            {{- end }}
+          {{- end }}
+        </div>
+        <div class="blog-card__content">
+          <div class="blog-card__meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+            <span>&bull;</span>
+            <span>{{ math.Round (div (countwords .Content) 200.0) }} min read</span>
+          </div>
+          <h3 class="blog-card__title">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </h3>
+          <p class="blog-card__excerpt">{{ .Summary | plainify | truncate 150 }}</p>
+          {{- with .Params.tags }}
+          <div class="blog-card__tags">
+            {{- range first 3 . }}
+            <span class="pub-tag">{{ . }}</span>
+            {{- end }}
+          </div>
+          {{- end }}
+        </div>
+      </article>
+      {{- end }}
+    </div>
+
+    {{- else if eq .Section "teaching" }}
+    <!-- Teaching Grid -->
+    <div class="work-grid stagger-children">
+      {{- range .Pages }}
+      <article class="work-card">
+        <div class="work-card__image">
+          <svg class="work-card__icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+        </div>
+        <div class="work-card__content">
+          {{- with .Params.date }}
+          <span class="work-card__tag">{{ . | time.Format "2006" }}</span>
+          {{- end }}
+          <h3 class="work-card__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <p class="work-card__description">{{ .Summary | plainify | truncate 120 }}</p>
+        </div>
+      </article>
+      {{- end }}
+    </div>
+
+    {{- else }}
+    <!-- Default List -->
+    <div class="work-grid stagger-children">
+      {{- range .Pages }}
+      <article class="card">
+        <h3 class="card__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <p class="card__description">{{ .Summary | plainify | truncate 150 }}</p>
+        <div class="card__meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+        </div>
+      </article>
+      {{- end }}
+    </div>
+    {{- end }}
+  </div>
+</section>
+{{ end }}

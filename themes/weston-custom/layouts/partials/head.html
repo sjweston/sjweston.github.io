@@ -1,0 +1,60 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{{- $title := .Title | default .Site.Title -}}
+{{- if and .IsHome .Site.Title -}}
+  {{- $title = .Site.Title -}}
+{{- else if .IsPage -}}
+  {{- $title = printf "%s | %s" .Title .Site.Title -}}
+{{- end -}}
+<title>{{ $title }}</title>
+
+{{- with .Description | default .Site.Params.description -}}
+<meta name="description" content="{{ . }}">
+{{- end }}
+
+{{- with .Site.Params.author }}
+<meta name="author" content="{{ . }}">
+{{- end }}
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{- with .Description | default .Site.Params.description }}
+<meta property="og:description" content="{{ . }}">
+{{- end }}
+{{- with .Site.Title }}
+<meta property="og:site_name" content="{{ . }}">
+{{- end }}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+{{- with .Description | default .Site.Params.description }}
+<meta name="twitter:description" content="{{ . }}">
+{{- end }}
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Main Stylesheet -->
+{{- $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="{{ "media/icon.png" | relURL }}">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- RSS -->
+{{- with .OutputFormats.Get "rss" }}
+<link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .Permalink }}">
+{{- end }}
+
+<!-- Theme Color -->
+<meta name="theme-color" content="#0F4C5C">

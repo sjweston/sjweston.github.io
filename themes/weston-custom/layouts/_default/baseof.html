@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" {{ if .Site.Params.appearance.mode }}data-theme="{{ .Site.Params.appearance.mode }}"{{ end }}>
+<head>
+  {{- partial "head.html" . -}}
+</head>
+<body>
+  {{- partial "header.html" . -}}
+
+  <main id="main-content">
+    {{- block "main" . }}{{- end }}
+  </main>
+
+  {{- partial "footer.html" . -}}
+
+  {{- partial "scripts.html" . -}}
+</body>
+</html>

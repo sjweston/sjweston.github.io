@@ -1,0 +1,11 @@
+name = "Weston Custom"
+license = "MIT"
+licenselink = "https://github.com/sjweston"
+description = "A custom theme for Sara Weston's professional website"
+homepage = "https://saraweston.com"
+tags = ["academic", "portfolio", "professional", "responsive"]
+features = ["custom design", "data visualization", "interactive timeline"]
+min_version = "0.120.0"
+
+[author]
+  name = "Sara Weston"

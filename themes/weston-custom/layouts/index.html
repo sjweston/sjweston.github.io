@@ -176,10 +176,15 @@
       {{- with index $featured 0 }}
       <article class="work-card">
         <div class="work-card__image">
+          {{- $pubImg := .Resources.GetMatch "featured.*" }}
+          {{- with $pubImg }}
+          <img src="{{ .Permalink }}" alt="{{ $.Title }}">
+          {{- else }}
           <svg class="work-card__icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5">
             <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
             <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
           </svg>
+          {{- end }}
         </div>
         <div class="work-card__content">
           <span class="work-card__tag">Featured Research</span>
@@ -191,13 +196,19 @@
 
       <!-- Blog Highlight -->
       {{- $posts := where .Site.RegularPages "Section" "post" -}}
+      {{- $posts = sort $posts ".Date" "desc" -}}
       {{- with index $posts 0 }}
       <article class="work-card">
         <div class="work-card__image">
+          {{- $postImg := .Resources.GetMatch "featured.*" }}
+          {{- with $postImg }}
+          <img src="{{ .Permalink }}" alt="{{ $.Title }}">
+          {{- else }}
           <svg class="work-card__icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5">
             <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
             <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
           </svg>
+          {{- end }}
         </div>
         <div class="work-card__content">
           <span class="work-card__tag">Latest Writing</span>

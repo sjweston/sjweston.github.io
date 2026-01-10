@@ -1,12 +1,19 @@
 {{ define "main" }}
 <div style="padding-top: var(--header-height);"></div>
 
+{{- $featured := .Resources.GetMatch "featured.*" }}
+{{- with $featured }}
+<div class="article-featured-image animate-on-scroll">
+  <img src="{{ .Permalink }}" alt="{{ $.Title }}">
+</div>
+{{- end }}
+
 <article class="section">
   <div class="container container--narrow">
     <!-- Article Header -->
     <header class="animate-on-scroll" style="margin-bottom: var(--space-3xl);">
       {{- if .Params.tags }}
-      <div style="display: flex; gap: var(--space-xs); margin-bottom: var(--space-md);">
+      <div style="display: flex; flex-wrap: wrap; gap: var(--space-xs); margin-bottom: var(--space-md);">
         {{- range first 3 .Params.tags }}
         <span class="pub-tag">{{ . }}</span>
         {{- end }}
@@ -183,6 +190,20 @@
   background: var(--color-border);
   padding: 0.2em 0.4em;
   border-radius: var(--radius-sm);
+}
+
+.article-featured-image {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.article-featured-image img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
 }
 </style>
 {{ end }}

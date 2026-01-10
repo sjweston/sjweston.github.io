@@ -10,17 +10,25 @@
     {{- end }}
   </div>
 
-  <div class="hero__content">
-    <p class="hero__eyebrow">{{ $author.Params.role }}</p>
-    <h1 class="hero__title">{{ $author.Title }}</h1>
-    <p class="hero__subtitle">Turning data into decisions</p>
-    <p class="hero__description">
-      I'm a behavioral scientist who transforms complex research into actionable insights. From survey responses to Senate hearings, my work bridges the gap between data and policy.
-    </p>
-    <div class="hero__cta">
-      <a href="#impact" class="btn btn--primary">See My Impact</a>
-      <a href="{{ "publication/" | relURL }}" class="btn btn--secondary">Read My Research</a>
-      <a href="{{ "uploads/resume.pdf" | relURL }}" class="btn btn--secondary">Download CV</a>
+  <div class="hero__content hero__content--with-avatar">
+    <div class="hero__text">
+      <p class="hero__eyebrow">{{ $author.Params.role }}</p>
+      <h1 class="hero__title">{{ $author.Title }}</h1>
+      <p class="hero__subtitle">Turning data into decisions</p>
+      <p class="hero__description">
+        I'm a behavioral scientist who transforms complex research into actionable insights. From survey responses to Senate hearings, my work bridges the gap between data and policy.
+      </p>
+      <div class="hero__cta">
+        <a href="#impact" class="btn btn--primary">See My Impact</a>
+        <a href="{{ "publication/" | relURL }}" class="btn btn--secondary">Read My Research</a>
+        <a href="{{ "uploads/resume.pdf" | relURL }}" class="btn btn--secondary">Download CV</a>
+      </div>
+    </div>
+    <div class="hero__avatar">
+      {{- $avatar := $author.Resources.GetMatch "avatar.*" }}
+      {{- with $avatar }}
+      <img src="{{ .Permalink }}" alt="{{ $author.Title }}" class="hero__avatar-img">
+      {{- end }}
     </div>
   </div>
 </section>
@@ -266,10 +274,9 @@
       {{- range first 3 $posts }}
       <article class="blog-card">
         <div class="blog-card__image">
-          {{- with .Params.image }}
-            {{- with $.Resources.GetMatch .filename }}
-            <img src="{{ .Permalink }}" alt="">
-            {{- end }}
+          {{- $featured := .Resources.GetMatch "featured.*" }}
+          {{- with $featured }}
+          <img src="{{ .Permalink }}" alt="{{ $.Title }}">
           {{- end }}
         </div>
         <div class="blog-card__content">

@@ -83,10 +83,9 @@
       {{- range .Pages.ByDate.Reverse }}
       <article class="blog-card">
         <div class="blog-card__image">
-          {{- with .Params.image }}
-            {{- with $.Resources.GetMatch .filename }}
-            <img src="{{ .Permalink }}" alt="">
-            {{- end }}
+          {{- $featured := .Resources.GetMatch "featured.*" }}
+          {{- with $featured }}
+          <img src="{{ .Permalink }}" alt="{{ $.Title }}">
           {{- end }}
         </div>
         <div class="blog-card__content">

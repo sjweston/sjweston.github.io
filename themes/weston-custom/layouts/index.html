@@ -34,6 +34,7 @@
 </section>
 
 <!-- Impact Stats Section -->
+{{- $metrics := .Site.Data.metrics -}}
 <section class="impact" id="impact">
   <div class="container">
     <div class="section-header animate-on-scroll">
@@ -43,9 +44,9 @@
 
     <div class="impact__grid stagger-children">
       <div class="impact__stat">
-        <div class="impact__number" data-target="1500000" data-prefix="$" data-suffix="+">$0</div>
-        <div class="impact__label">Research Funding Secured</div>
-        <div class="impact__context">NIH and foundation grants as PI</div>
+        <div class="impact__number" data-target="{{ with $metrics }}{{ .total_citations }}{{ else }}2800{{ end }}" data-suffix="+">0</div>
+        <div class="impact__label">Total Citations</div>
+        <div class="impact__context">h-index: {{ with $metrics }}{{ .h_index }}{{ else }}22{{ end }}</div>
       </div>
       <div class="impact__stat">
         <div class="impact__number" data-target="{{ len (where .Site.RegularPages "Section" "publication") }}" data-suffix="">0</div>
@@ -53,9 +54,9 @@
         <div class="impact__context">Spanning personality, health, and methods</div>
       </div>
       <div class="impact__stat">
-        <div class="impact__number" data-target="6500" data-suffix="+">0</div>
-        <div class="impact__label">Survey Responses Analyzed</div>
-        <div class="impact__context">For federal policy recommendations</div>
+        <div class="impact__number" data-target="1500000" data-prefix="$" data-suffix="+">$0</div>
+        <div class="impact__label">Research Funding Secured</div>
+        <div class="impact__context">NIH and foundation grants as PI</div>
       </div>
       <div class="impact__stat">
         <div class="impact__number" data-target="50000" data-suffix="+">0</div>

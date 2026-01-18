@@ -172,6 +172,29 @@
   margin: var(--space-xl) 0;
 }
 
+/* Allow wide images (like Sankey diagrams) to break out of narrow container */
+.prose img[alt*="sankey" i],
+.prose img[alt*="path" i],
+.prose img[alt*="funnel" i],
+.prose img[alt*="archetype" i],
+.prose img[alt*="device" i] {
+  max-width: calc(100% + 8rem);
+  margin-left: -4rem;
+  margin-right: -4rem;
+}
+
+@media (max-width: 768px) {
+  .prose img[alt*="sankey" i],
+  .prose img[alt*="path" i],
+  .prose img[alt*="funnel" i],
+  .prose img[alt*="archetype" i],
+  .prose img[alt*="device" i] {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .prose pre {
   background: var(--color-bg-dark);
   color: #F5F6F7;

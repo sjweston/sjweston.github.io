@@ -178,6 +178,3 @@ The 6.83% conversion rate isn't wrong. It's just **incomplete**. Behind that sin
 
 Aggregate metrics are convenient. But they hide everything interesting.
 
----
-
-*This analysis demonstrates skills in user journey mapping, behavioral segmentation, statistical clustering, and translating technical findings into business insights—exactly what I bring to data science and UX research roles.*

@@ -153,21 +153,3 @@ I demonstrated this with a non-tautological approach:
 
 The result: behavioral archetypes with distinct conversion profiles, engagement patterns, and intervention opportunities.
 
-## What I'd Do Next
-
-If this were my company, I'd:
-
-1. **Instrument behavioral signals in real-time** to classify users into archetypes early in their session
-2. **Personalize the experience** based on archetype:
-   - Show Bouncers strong value props immediately
-   - Give Window Shoppers social proof and urgency
-   - Reduce friction for Cart Abandoners (free shipping threshold? Payment options?)
-3. **A/B test interventions** within each archetype separately (not across all users)
-4. **Track archetype distribution over time**—are we shifting users from low-value to high-value archetypes?
-
-## Technical Details
-
-**Data:** 473K sessions, 1.2M pageviews, 32K conversions (Maven Fuzzy Factory dataset)
-**Methods:** K-means clustering, silhouette analysis, chi-square tests, entropy measures
-**Tools:** R (tidyverse, ggplot2, ggalluvial, cluster)
-**Code:** [GitHub repository](https://github.com/yourusername/journey-topology-analysis) *(full scripts and visualizations)*

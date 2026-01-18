@@ -143,3 +143,10 @@ These are specific, answerable questions with specific interventions.
 Most analyses of this dataset (and I've reviewed dozens on GitHub) report aggregate metrics. They assume a single homogeneous population. They optimize for averages.
 
 But averages hide the underlying structure. This dataset doesn't have one conversion rate—it has five, ranging from 0% to 62%. The variance is the signal, not the noise.
+
+I demonstrated this with a non-tautological approach:
+1. Cluster users by **navigation behavior** (pages, time, depth)
+2. Validate cluster quality (92% variance explained, silhouette = 0.79)
+3. Examine conversion **post-hoc** (avoid circular logic)
+4. Test what else differs (device, time-per-page, visitor type)
+5. Map actual navigation paths (Sankey diagrams)

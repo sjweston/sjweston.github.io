@@ -108,7 +108,7 @@ Temporal patterns don't predict journey type. User intent does.
 
 To understand *how* these journeys differ, I mapped the actual navigation sequences. Here's what Deep Engagers do:
 
-![Deep Engager paths](outputs/figures/13_sankey_deep_engager.png)
+![Deep Engager paths](outputs/figures/13b_sankey_deep_engager_7step.png)
 
 The dominant pattern for Deep Engagers is clear: Landing → Products → Product Detail → Cart → Shipping → Billing → Thank You. **38% follow this exact path**—the "golden path." The remaining users follow minor variations (different entry points, slightly different product browsing patterns) but converge on the same checkout funnel.
 

@@ -6,11 +6,11 @@ authors:
 tags: [data-science, ux-research, user-analytics, clustering]
 ---
 
-Every e-commerce analysis I've seen reports the same metric: **overall conversion rate**. For this dataset—473,000 sessions from an online toy retailer—it's 6.83%.
-
-That number tells you almost nothing.
+What does it mean to say I "care about heterogeneity?" It means that I'm not interested in aggregate metrics alone. Instead, I dig into those metrics to identify the unique groups or individuals and try to pull apart their differences. By doing so, I can better understand not only the users of a product, but surface different strategies for boosting performance. In other words, I can improve the aggregate measure by ignoring it. Let me show you this in practice. 
 
 ## The Standard Analysis
+
+I'll use a common dataset, the Maven Fuzzy Factory, a hypothetical e-commerce company. I believe this dataset is used in online data science courses (looking at you, [Udemy](https://www.udemy.com/course/advanced-sql-mysql-for-analytics-business-intelligence) with a focus on aggregate statistics.
 
 Here's what every portfolio project shows: 6.83% conversion rate. Desktop converts better than mobile. Traffic drops off at the cart stage. The standard funnel looks like this:
 

@@ -150,3 +150,5 @@ I demonstrated this with a non-tautological approach:
 3. Examine conversion **post-hoc** (avoid circular logic)
 4. Test what else differs (device, time-per-page, visitor type)
 5. Map actual navigation paths (Sankey diagrams)
+
+The result: behavioral archetypes with distinct conversion profiles, engagement patterns, and intervention opportunities.

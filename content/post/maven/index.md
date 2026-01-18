@@ -171,10 +171,3 @@ If this were my company, I'd:
 **Methods:** K-means clustering, silhouette analysis, chi-square tests, entropy measures
 **Tools:** R (tidyverse, ggplot2, ggalluvial, cluster)
 **Code:** [GitHub repository](https://github.com/yourusername/journey-topology-analysis) *(full scripts and visualizations)*
-
----
-
-The 6.83% conversion rate isn't wrong. It's just **incomplete**. Behind that single number are five distinct user populations with fundamentally different behaviors and needs.
-
-Aggregate metrics are convenient. But they hide everything interesting.
-

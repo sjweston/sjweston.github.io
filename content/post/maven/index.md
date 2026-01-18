@@ -40,7 +40,7 @@ The clustering revealed five distinct behavioral signatures. Here they are visua
 
 ![Behavioral profiles by archetype](outputs/figures/06_cluster_profiles_radar.png)
 
-*How to read these: Each spoke represents a different metric (page depth, products viewed, % who reach cart, % who reach billing, conversion rate, revenue per session). The farther from center, the higher the value. Metrics are scaled 0-1 for comparison.*
+*How to read these: Each spoke represents a different behavioral metric (page depth, products viewed, session duration, % who reach cart, % who reach billing). The farther from center, the higher the value. These are clustering features only—conversion was examined separately to avoid circular logic.*
 
 Here's what they look like:
 
@@ -64,7 +64,9 @@ Here's where it gets interesting.
 
 They navigate through 6-7 pages. They spend **124 seconds per page**—the most deliberate of any group. They reach cart, shipping, and billing.
 
-Their radar is nearly maxed out across all dimensions. And they convert at **62.2%**.
+Their radar is nearly maxed out across all behavioral dimensions. And they convert at **62.2%**.
+
+But what about the 38% of Deep Engagers who *don't* convert? They complete the exact same journey—reaching billing, the final step before purchase—but stop there. These are the "99.5% completers" who abandon at the last moment, likely due to price shock, payment friction, or final hesitation.
 
 ## The Reveal
 
@@ -106,13 +108,13 @@ Temporal patterns don't predict journey type. User intent does.
 
 To understand *how* these journeys differ, I mapped the actual navigation sequences. Here's what Deep Engagers do:
 
-![Deep Engager paths](outputs/figures/13b_sankey_deep_engager_7step.png)
+![Deep Engager paths](outputs/figures/13_sankey_deep_engager.png)
 
-Deep Engagers follow remarkably similar paths: Landing → Products → Product Detail → Cart → Shipping → Billing → Thank You. This is the "golden path."
+The dominant pattern for Deep Engagers is clear: Landing → Products → Product Detail → Cart → Shipping → Billing → Thank You. **38% follow this exact path**—the "golden path." The remaining users follow minor variations (different entry points, slightly different product browsing patterns) but converge on the same checkout funnel.
 
 Bouncers, in contrast, have almost zero path diversity (entropy = 0.58). They land and exit. That's it.
 
-Cart Abandoners, interestingly, show the *highest* path diversity (entropy = 1.83), other than Deep Engagers. There are many different ways to abandon a cart, suggesting many different reasons for abandonment.
+Cart Abandoners show higher path diversity—there are many different ways to abandon a cart, suggesting many different reasons for abandonment.
 
 ## Why This Matters
 
@@ -151,6 +153,33 @@ I demonstrated this with a non-tautological approach:
 4. Test what else differs (device, time-per-page, visitor type)
 5. Map actual navigation paths (Sankey diagrams)
 
+The result: behavioral archetypes with distinct conversion profiles, engagement patterns, and intervention opportunities.
+
 ## What I'd Do Next
 
 If this were my company, I'd:
+
+1. **Instrument behavioral signals in real-time** to classify users into archetypes early in their session
+2. **Personalize the experience** based on archetype:
+   - Show Bouncers strong value props immediately
+   - Give Window Shoppers social proof and urgency
+   - Reduce friction for Cart Abandoners (free shipping threshold? Payment options?)
+3. **A/B test interventions** within each archetype separately (not across all users)
+4. **Track archetype distribution over time**—are we shifting users from low-value to high-value archetypes?
+
+## Technical Details
+
+**Data:** 473K sessions, 1.2M pageviews, 32K conversions (Maven Fuzzy Factory dataset)
+**Methods:** K-means clustering, silhouette analysis, chi-square tests, entropy measures
+**Tools:** R (tidyverse, ggplot2, ggalluvial, cluster)
+**Code:** [GitHub repository](https://github.com/yourusername/journey-topology-analysis) *(full scripts and visualizations)*
+
+---
+
+The 6.83% conversion rate isn't wrong. It's just **incomplete**. Behind that single number are five distinct user populations with fundamentally different behaviors and needs.
+
+Aggregate metrics are convenient. But they hide everything interesting.
+
+---
+
+*This analysis demonstrates skills in user journey mapping, behavioral segmentation, statistical clustering, and translating technical findings into business insights—exactly what I bring to data science and UX research roles.*

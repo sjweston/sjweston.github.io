@@ -1,6 +1,6 @@
 ---
 title: "The 6.83% That Hides Everything: Why Aggregate Metrics Mislead"
-date: 2026-01-26
+date: 2026-01-17
 authors:
     - admin
 tags: [data-science, ux-research, user-analytics, clustering]

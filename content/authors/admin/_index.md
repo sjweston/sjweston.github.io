@@ -98,7 +98,7 @@ work:
     date_end: 2024-09-15
     summary: |2-
       Accomplishments include:
-      - Managed $250K annual research budget across concurrent projects; secured $1.5M+ in competitive NIH and foundation funding as PI.
+      - Managed $250K annual research budget across concurrent projects; secured $1.5M+ in competitive NIH and foundation funding as Co-I.
       - Applied NLP and network analysis to 700,000+ online health community posts; findings informed targeted communication strategies for patient advocacy organizations.
       - Published methodological guidelines on data transparency adopted by major psychology journals; established standards for documentation in preexisting datasets.
       - Identified curriculum gaps through student feedback analysis; implemented changes that increased course satisfaction ratings by 25% within one year.

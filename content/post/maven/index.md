@@ -101,3 +101,39 @@ Desktop users are 2.3x more likely to become Deep Engagers. The mobile experienc
 - Holiday season (all ~23% Nov/Dec)
 
 Temporal patterns don't predict journey type. User intent does.
+
+## The Navigation Paths
+
+To understand *how* these journeys differ, I mapped the actual navigation sequences. Here's what Deep Engagers do:
+
+![Deep Engager paths](outputs/figures/13_sankey_deep_engager.png)
+
+Deep Engagers follow remarkably similar paths: Landing → Products → Product Detail → Cart → Shipping → Billing → Thank You. This is the "golden path."
+
+Bouncers, in contrast, have almost zero path diversity (entropy = 0.58). They land and exit. That's it.
+
+Cart Abandoners, interestingly, show the *highest* path diversity (entropy = 1.83). There are many different ways to abandon a cart, suggesting many different reasons for abandonment.
+
+## Why This Matters
+
+The standard question is: *"How do we improve our 6.83% conversion rate?"*
+
+That question assumes incremental improvement across all users. But 89% of users convert at 0%. You can't incrementally improve zero.
+
+The better question is: **"How do we turn Window Shoppers into Deep Engagers?"**
+
+Window Shoppers (35% of sessions) already demonstrate intent—they browse products, they spend 107 seconds per page. They're engaged but not converting.
+
+What's stopping them?
+- Are they missing key product information?
+- Do they lack social proof or urgency signals?
+- Is the path to cart unclear?
+- Are they comparison shopping elsewhere?
+
+Similarly for Cart Abandoners (9% of sessions): They made it to the cart. Some reached *billing*—99.5% of the way there—and still didn't convert. Why?
+- Price shock at checkout?
+- Unexpected shipping costs?
+- Payment friction?
+- Technical issues?
+
+These are specific, answerable questions with specific interventions.

@@ -10,4 +10,9 @@ markup: "markdown"
 
 Every e-commerce analysis I've seen reports the same metric: **overall conversion rate**. For this dataset—473,000 sessions from an online toy retailer—it's 6.83%.
 
+That number tells you almost nothing.
+
+## The Standard Analysis
+
+Here's what every portfolio project shows: 6.83% conversion rate. Desktop converts better than mobile. Traffic drops off at the cart stage. The standard funnel looks like this:
 

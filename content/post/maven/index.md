@@ -1,6 +1,6 @@
 ---
 title: "The 6.83% That Hides Everything: Why Aggregate Metrics Mislead"
-date: 2026-01-17
+date: 2026-01-21
 authors:
   - admin
 tags: [data-science, ux-research, user-analytics, clustering]
@@ -170,7 +170,7 @@ If this were my company, I'd:
 **Data:** 473K sessions, 1.2M pageviews, 32K conversions (Maven Fuzzy Factory dataset)
 **Methods:** K-means clustering, silhouette analysis, chi-square tests, entropy measures
 **Tools:** R (tidyverse, ggplot2, ggalluvial, cluster)
-**Code:** [GitHub repository](https://github.com/yourusername/journey-topology-analysis) *(full scripts and visualizations)*
+**Code:** [GitHub repository](https://github.com/sjweston/journey-topology-analysis) *(full scripts and visualizations)*
 
 ---
 

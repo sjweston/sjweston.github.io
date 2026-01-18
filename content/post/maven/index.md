@@ -16,3 +16,5 @@ That number tells you almost nothing.
 
 Here's what every portfolio project shows: 6.83% conversion rate. Desktop converts better than mobile. Traffic drops off at the cart stage. The standard funnel looks like this:
 
+![Standard funnel](outputs/figures/01_standard_funnel.png)
+

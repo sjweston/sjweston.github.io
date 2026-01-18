@@ -112,7 +112,7 @@ Deep Engagers follow remarkably similar paths: Landing → Products → Product 
 
 Bouncers, in contrast, have almost zero path diversity (entropy = 0.58). They land and exit. That's it.
 
-Cart Abandoners, interestingly, show the *highest* path diversity (entropy = 1.83). There are many different ways to abandon a cart, suggesting many different reasons for abandonment.
+Cart Abandoners, interestingly, show the *highest* path diversity (entropy = 1.83), other than Deep Engagers. There are many different ways to abandon a cart, suggesting many different reasons for abandonment.
 
 ## Why This Matters
 
@@ -137,3 +137,47 @@ Similarly for Cart Abandoners (9% of sessions): They made it to the cart. Some r
 - Technical issues?
 
 These are specific, answerable questions with specific interventions.
+
+## The Methodological Point
+
+Most analyses of this dataset (and I've reviewed dozens on GitHub) report aggregate metrics. They assume a single homogeneous population. They optimize for averages.
+
+But averages hide the underlying structure. This dataset doesn't have one conversion rate—it has five, ranging from 0% to 62%. The variance is the signal, not the noise.
+
+I demonstrated this with a non-tautological approach:
+1. Cluster users by **navigation behavior** (pages, time, depth)
+2. Validate cluster quality (92% variance explained, silhouette = 0.79)
+3. Examine conversion **post-hoc** (avoid circular logic)
+4. Test what else differs (device, time-per-page, visitor type)
+5. Map actual navigation paths (Sankey diagrams)
+
+The result: behavioral archetypes with distinct conversion profiles, engagement patterns, and intervention opportunities.
+
+## What I'd Do Next
+
+If this were my company, I'd:
+
+1. **Instrument behavioral signals in real-time** to classify users into archetypes early in their session
+2. **Personalize the experience** based on archetype:
+   - Show Bouncers strong value props immediately
+   - Give Window Shoppers social proof and urgency
+   - Reduce friction for Cart Abandoners (free shipping threshold? Payment options?)
+3. **A/B test interventions** within each archetype separately (not across all users)
+4. **Track archetype distribution over time**—are we shifting users from low-value to high-value archetypes?
+
+## Technical Details
+
+**Data:** 473K sessions, 1.2M pageviews, 32K conversions (Maven Fuzzy Factory dataset)
+**Methods:** K-means clustering, silhouette analysis, chi-square tests, entropy measures
+**Tools:** R (tidyverse, ggplot2, ggalluvial, cluster)
+**Code:** [GitHub repository](https://github.com/yourusername/journey-topology-analysis) *(full scripts and visualizations)*
+
+---
+
+The 6.83% conversion rate isn't wrong. It's just **incomplete**. Behind that single number are five distinct user populations with fundamentally different behaviors and needs.
+
+Aggregate metrics are convenient. But they hide everything interesting.
+
+---
+
+*This analysis demonstrates skills in user journey mapping, behavioral segmentation, statistical clustering, and translating technical findings into business insights—exactly what I bring to data science and UX research roles.*

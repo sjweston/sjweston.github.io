@@ -1,0 +1,5 @@
+archetype,n_sessions,conversions,conversion_rate,revenue_per_session,total_revenue,pct_of_revenue
+Deep Engager,51921,32313,0.6223493384179934,37.335755282062344,1938509.7499996577,1
+Bouncer,211640,0,0,0,0,0
+Cart Abandoner,42952,0,0,0,0,0
+Window Shopper,166358,0,0,0,0,0

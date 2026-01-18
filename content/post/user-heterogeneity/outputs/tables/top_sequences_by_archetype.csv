@@ -1,0 +1,18 @@
+archetype,page_sequence,n,pct
+Bouncer,Landing Page,154294,0.729039879039879
+Bouncer,Other,57346,0.27096012096012095
+Cart Abandoner,Landing Page > Products > Product Detail > Cart,15507,0.4213057298883365
+Cart Abandoner,Other > Products > Product Detail > Cart,6793,0.18455728529899204
+Cart Abandoner,Landing Page > Products > Product Detail > Cart > Shipping,6143,0.16689760099980983
+Cart Abandoner,Landing Page > Products > Other > Cart,5571,0.15135707881652946
+Cart Abandoner,Other > Products > Product Detail > Cart > Shipping,2793,0.07588230499633222
+Deep Engager,Landing Page > Products > Product Detail > Cart > Shipping > Billing > Thank You,16793,0.3797087685976575
+Deep Engager,Landing Page > Products > Product Detail > Cart > Shipping > Billing,10082,0.22796545018767242
+Deep Engager,Other > Products > Product Detail > Cart > Shipping > Billing > Thank You,7068,0.15981549314882648
+Deep Engager,Landing Page > Products > Other > Cart > Shipping > Billing > Thank You,5809,0.13134807579252022
+Deep Engager,Other > Products > Product Detail > Cart > Shipping > Billing,4474,0.10116221227332338
+Window Shopper,Landing Page > Products > Product Detail,64347,0.40391568533909156
+Window Shopper,Landing Page > Products,34907,0.21911642855349386
+Window Shopper,Other > Products > Product Detail,28221,0.17714741255931907
+Window Shopper,Other > Products,16110,0.10112486504130364
+Window Shopper,Landing Page > Products > Other,15723,0.09869560850679188

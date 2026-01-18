@@ -1,0 +1,7 @@
+step,count,step_name,pct_of_sessions,drop_off_rate
+step_1_sessions,472871,1. Sessions,1,0
+step_2_products,261231,2. Viewed Products,0.5524360766466965,0.44756392335330353
+step_3_cart,94953,3. Added to Cart,0.20080106413799959,0.6365171055502601
+step_4_shipping,64484,4. Shipping Info,0.13636700072535637,0.32088506945541473
+step_5_billing,52058,5. Billing Info,0.1100892209503226,0.1926989640841139
+step_6_conversion,32313,6. Order Complete,0.0683336470200118,0.3792884859195512

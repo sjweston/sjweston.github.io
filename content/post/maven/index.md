@@ -18,3 +18,86 @@ Here's what every portfolio project shows: 6.83% conversion rate. Desktop conver
 
 ![Standard funnel](outputs/figures/01_standard_funnel.png)
 
+These are aggregate metrics. They assume all users are interchangeable units flowing through the same linear path at different completion rates. But what if that's wrong?
+
+## A Different Question
+
+Instead of asking *"What's our conversion rate?"*, I asked: **"What types of journeys do users actually take?"**
+
+I analyzed 473,000 sessions and 1.2 million pageviews. For each session, I captured behavioral features:
+- **Pages viewed** (depth and breadth of exploration)
+- **Time spent** (total session duration and per-page deliberation)
+- **Funnel progression** (did they reach cart? shipping? billing?)
+- **Navigation sequence** (the actual path taken)
+
+Then I ran k-means clustering using **only these behavioral features**—critically, I excluded conversion itself. This avoids circular logic: I wanted to see if natural behavioral groups exist first, *then* examine whether they differ in conversion.
+
+Five distinct clusters emerged with 92.4% of variance explained and a silhouette score of 0.79 (indicating strong, well-separated groups). These weren't statistical artifacts—they were real behavioral archetypes.
+
+## The Five Journey Archetypes
+
+The clustering revealed five distinct behavioral signatures. Here they are visualized as radar charts—think of each one as a "fingerprint" showing how that group behaves across six dimensions:
+
+![Behavioral profiles by archetype](outputs/figures/06_cluster_profiles_radar.png)
+
+*How to read these: Each spoke represents a different metric (page depth, products viewed, % who reach cart, % who reach billing, conversion rate, revenue per session). The farther from center, the higher the value. Metrics are scaled 0-1 for comparison.*
+
+Here's what they look like:
+
+### 1. Bouncers (45% of sessions)
+One page. Zero seconds. Instant exit.
+
+They land on a page—73% on designed landing pages—and immediately leave. Their radar chart is nearly flat: minimal engagement across all dimensions. **0% conversion**.
+
+### 2. Window Shoppers (35% of sessions)
+They browse 2-3 pages and view products. They spend 107 seconds per page—they're not rushing. They're genuinely looking.
+
+Their radar shows moderate page depth and product views, but drops to zero at cart. **0% conversion**.
+
+### 3. Cart Abandoners (9% of sessions)
+They make it to the cart. Some even reach shipping (65%) or billing (45%). They're *so close*.
+
+Their radar stretches far on page depth and cart reach, but collapses at conversion. **0% conversion**.
+
+### 4. Deep Engagers (11% of sessions)
+Here's where it gets interesting.
+
+They navigate through 6-7 pages. They spend **124 seconds per page**—the most deliberate of any group. They reach cart, shipping, and billing.
+
+Their radar is nearly maxed out across all dimensions. And they convert at **62.2%**.
+
+## The Reveal
+
+**Deep Engagers are 11% of sessions. They generate 100% of revenue.**
+
+The other 89% of users—Bouncers, Window Shoppers, and Cart Abandoners—convert at approximately 0%.
+
+The aggregate 6.83% conversion rate is meaningless. It's an average of two completely different populations: a small group that converts at 62%, and a large group that converts at 0%.
+
+## What Actually Differentiates Them?
+
+Remember, I didn't cluster on conversion. I clustered on navigation behavior. So what *else* differs between Deep Engagers and everyone else?
+
+I ran post-hoc analyses on non-tautological factors:
+
+**Time per page:**
+- Deep Engagers: 124 seconds
+- Bouncers: 0 seconds
+
+This isn't about conversion—it's about **deliberation**. Deep Engagers are considering their purchase. They're reading product details, comparing options, thinking it through.
+
+**Device type (χ² p < 0.001):**
+
+![Device by archetype](outputs/figures/09_device_by_archetype.png)
+
+- Deep Engagers: 84% desktop
+- Bouncers: 64% desktop, 36% mobile
+
+Desktop users are 2.3x more likely to become Deep Engagers. The mobile experience is driving bounces.
+
+**What *doesn't* differ:**
+- Time of day (all ~57% business hours)
+- Day of week (all ~15% weekend)
+- Holiday season (all ~23% Nov/Dec)
+
+Temporal patterns don't predict journey type. User intent does.

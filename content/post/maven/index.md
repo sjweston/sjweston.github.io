@@ -137,3 +137,9 @@ Similarly for Cart Abandoners (9% of sessions): They made it to the cart. Some r
 - Technical issues?
 
 These are specific, answerable questions with specific interventions.
+
+## The Methodological Point
+
+Most analyses of this dataset (and I've reviewed dozens on GitHub) report aggregate metrics. They assume a single homogeneous population. They optimize for averages.
+
+But averages hide the underlying structure. This dataset doesn't have one conversion rate—it has five, ranging from 0% to 62%. The variance is the signal, not the noise.

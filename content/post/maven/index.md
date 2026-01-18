@@ -1,5 +1,5 @@
 ---
-title: "The 6.83\% That Hides Everything: Why Aggregate Metrics Mislead"
+title: "The 6.83% That Hides Everything: Why Aggregate Metrics Mislead"
 date: 2026-01-26
 authors:
     - admin

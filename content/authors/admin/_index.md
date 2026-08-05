@@ -20,12 +20,12 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Associate Professor of Psychology
+role: Statistician
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: University of Oregon
-    url: https://naturalsciences.uoregon.edu/psychology
+  - name: foundry10
+    url: https://www.foundry10.org/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -64,12 +64,23 @@ education:
     date_start: 2008-09-01
     date_end: 2012-06-15
 work:
+  - position: Statistician
+    company_name: foundry10
+    company_url: 'https://www.foundry10.org/'
+    company_logo: ''
+    date_start: 2026-08-03
+    date_end: ''
+    summary: |2-
+      - Provide expertise in quantitative methodologies to the Research pillar.
+      - Consult on research projects across the organization.
+      - Develop systems for providing statistical support throughout the research process.
+      - Develop and maintain standards for statistical reporting.
   - position: Associate Professor & Director of Graduate Studies
     company_name: University of Oregon
     company_url: ''
     company_logo: ''
     date_start: 2024-09-16
-    date_end: ''
+    date_end: 2026-06-15
     summary: |2-
       Accomplishments include:
       - Built Power BI dashboards tracking 70+ PhD students across milestones; enabled proactive intervention and informed program policy decisions for 30 faculty within first year.

@@ -60,7 +60,7 @@ sitemap:
 
 # Custom params for the theme
 params:
-  description: "Behavioral scientist turning data into decisions. Statistician at foundry10."
+  description: "Behavioral scientist turning data into decisions. Senior Researcher/Statistician at foundry10."
   author: "Sara Weston"
   appearance:
     mode: light

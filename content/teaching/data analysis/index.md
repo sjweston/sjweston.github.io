@@ -1,6 +1,6 @@
 ---
 title: Data Analysis I & II
-summary: Graduate-level statistics sequence covering descriptive statistics, inference, regression, and the general linear model. Taught since 2019.
+summary: Graduate-level statistics sequence covering descriptive statistics, inference, regression, and the general linear model. Taught 2019–2026 at the University of Oregon.
 date: 2024-10-01
 tags:
   - Statistics
@@ -10,7 +10,7 @@ external_link: "https://uopsych.github.io/psy611"
 github: "https://github.com/uopsych/psy611"
 ---
 
-I teach the Data Analysis sequence to incoming Doctoral and Masters students in the Psychology program. The course also draws graduate students from Linguistics, Business, Anthropology, Communication Sciences and more. I've taught this course yearly since 2019.
+I taught the Data Analysis sequence to incoming Doctoral and Masters students in the Psychology program. The course also draws graduate students from Linguistics, Business, Anthropology, Communication Sciences and more. I taught this course yearly from 2019 until I left the University of Oregon in 2026.
 
 ## Data Analysis I
 
@@ -25,7 +25,7 @@ I teach the Data Analysis sequence to incoming Doctoral and Masters students in 
 
 ## Data Analysis II
 
-I frequently teach the second term of Data Analysis (2020-2023).
+I frequently taught the second term of Data Analysis (2020-2023).
 
 **Topics covered:**
 - Regression and the general linear model

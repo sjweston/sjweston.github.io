@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Statistician
+role: Senior Researcher/Statistician
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -64,7 +64,7 @@ education:
     date_start: 2008-09-01
     date_end: 2012-06-15
 work:
-  - position: Statistician
+  - position: Senior Researcher/Statistician
     company_name: foundry10
     company_url: 'https://www.foundry10.org/'
     company_logo: ''
@@ -93,7 +93,7 @@ work:
     company_url: ''
     company_logo: ''
     date_start: 2015-01-01
-    date_end: ''
+    date_end: 2026-06-30
     summary: |2-
       Accomplishments include:
       - Designed survey infrastructure tracking 3,300+ families across 50+ waves; identified behavioral barriers to benefit uptake, informing Child Tax Credit policy within 12 months.
@@ -200,6 +200,4 @@ awards:
 
 ## About Me
 
-I am a behavioral science and research methodology expert with over a decade of experience leading high-impact research. I specialize in advanced statistical methods—including text analysis, longitudinal modeling, and Bayesian approaches—and in translating complex findings into actionable insights for policymakers, non-technical stakeholders, and cross-disciplinary teams. Driven by both scientific rigor and real-world impact, my research has informed federal policy, advanced methodological standards in psychology, and equipped the next generation of scholars with the tools to conduct transparent, high-quality research.
-
-
+I am a behavioral scientist and statistician with over a decade of experience in research methodology. I specialize in advanced statistical methods—including text analysis, longitudinal modeling, and Bayesian approaches—and in translating complex findings into actionable insights for policymakers, non-technical stakeholders, and cross-disciplinary teams. At foundry10, I consult on study design, conduct rigorous statistical analysis, and set statistical standards for the research team. From 2019 to 2026 I was on the faculty at the University of Oregon, where my research informed federal policy and methodological standards in psychology, and where I taught graduate statistics and directed the graduate program.

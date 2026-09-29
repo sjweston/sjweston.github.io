@@ -1,4 +1,5 @@
 ---
+
 title: Personality Traits Predict the Onset of Disease
 authors:
 - Sara J. Weston
@@ -22,7 +23,39 @@ abstract: While personality traits have been linked concurrently to health statu
   new disease diagnosis suggest that traits are associated with the risk of developing
   disease—most notably the traits of conscientiousness, neuroticism, and openness.
   Findings are discussed as a means to identify pathways between personality and health.
-links:
-- name: URL
-  url: http://journals.sagepub.com/doi/10.1177/1948550614553248
+summary: In about 6,900 older adults followed for four years, personality traits, most notably conscientiousness, neuroticism, and openness, were associated with the risk of a new disease diagnosis.
+tags:
+- personality
+- disease onset
+- longitudinal
+- older adults
+- health and retirement study
+featured: false
+url_pdf: ''
+url_preregistration: ''
+url_code: ''
+url_dataset: ''
+url_project: ''
+url_poster: ''
+url_slides: ''
+url_video: ''
+
 ---
+
+## Why we asked
+
+Personality traits have been linked to health status and to mortality. What was unknown was whether traits predict specific diagnoses, such as lung disease, heart disease, and stroke, that could account for the mortality findings.
+
+## What we did
+
+We used the Health and Retirement Study, a longitudinal study of older adults. In a sample of 6,904 participants, we measured personality and current health conditions, then followed up four years later to see who had developed a new disease.
+
+## What we found
+
+Cross-sectional analyses replicated earlier work: people with different diseases differed in their personality traits. The longitudinal analyses went a step further. Traits were associated with the risk of developing disease, most notably conscientiousness, neuroticism, and openness. In other words, personality measured at one point was associated with who received a new diagnosis four years later.
+
+## What it means
+
+These traits may help identify the pathways that link personality to health. We discuss the findings as a starting point for that work.
+
+*This summary is based on the published abstract.*

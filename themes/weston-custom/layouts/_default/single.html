@@ -79,6 +79,11 @@
         Data
       </a>
       {{- end }}
+      {{- range $key, $label := dict "url_preregistration" "Preregistration" "url_project" "Project" "url_slides" "Slides" "url_poster" "Poster" "url_video" "Video" }}
+      {{- with index $.Params $key }}
+      <a href="{{ . }}" class="btn btn--outline" target="_blank" rel="noopener">{{ $label }}</a>
+      {{- end }}
+      {{- end }}
     </div>
 
     {{- with .Params.abstract }}
